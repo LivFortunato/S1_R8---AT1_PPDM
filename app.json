@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "API Fórmula 1",
+    "slug": "api-formula1",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
