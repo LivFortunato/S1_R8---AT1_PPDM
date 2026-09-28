@@ -1,5 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Pressable, StyleSheet, Text, View, Image } from 'react-native';
 import { colors } from '../styles/colors';
 
 export default function HomeScreen({ navigation }) {
@@ -16,15 +17,16 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.title}>F1 Drivers</Text>
 
         <Text style={styles.description}>
-          Consulte os pilotos da Fórmula 1 e veja informações sobre nomes, números e equipes a
-          partir de dados da OpenF1 API.
+          Bem-vindo ao F1 Drivers! Aqui você pode conhecer os pilotos
+          da Fórmula 1, conferir seus números e descobrir a equipe
+          de cada um. Tudo isso de forma simples e rápida.
         </Text>
 
         <Pressable
           style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
           onPress={() => navigation.navigate('Pilotos')}
         >
-          <Text style={styles.buttonText}>Acessar pilotos</Text>
+          <Text style={styles.buttonText}>Conhecer os pilotos</Text>
           <Text style={styles.buttonArrow}>→</Text>
         </Pressable>
       </View>
